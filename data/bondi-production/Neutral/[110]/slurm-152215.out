@@ -1,0 +1,49 @@
+Running SLURM prolog script on red6084
+===============================================================================
+Job started on Wed Dec 25 12:25:27 GMT 2024
+Job ID          : 152215
+Job name        : 110
+WorkDir         : /iridisfs/scratch/ba3g18/Lithium/Pre-opt/[110]
+Command         : /iridisfs/scratch/ba3g18/Lithium/Pre-opt/[110]/QE_py.submit
+Partition       : batch
+Num hosts       : 1
+Num cores       : 192
+Num of tasks    : 192
+Hosts allocated : red6084
+Job Output Follows ...
+===============================================================================
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+Surface energy: 0.5078 J/m^2
+==============================================================================
+Running epilogue script on red6084.
+
+Submit time  : 2024-12-25T12:25:26
+Start time   : 2024-12-25T12:25:27
+End time     : 2024-12-25T14:00:36
+Elapsed time : 01:35:09 (Timelimit=2-12:00:00)
+
+Job ID: 152215
+Cluster: iridis_vi
+User/Group: ba3g18/eb
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 192
+CPU Utilized: 12-13:42:18
+CPU Efficiency: 99.09% of 12-16:28:48 core-walltime
+Job Wall-clock time: 01:35:09
+Memory Utilized: 171.84 GB (estimated maximum)
+Memory Efficiency: 27.36% of 628.12 GB (3.27 GB/core)
+

@@ -1,0 +1,183 @@
+Running SLURM prolog script on red6115
+===============================================================================
+Job started on Wed Dec 25 12:25:34 GMT 2024
+Job ID          : 152217
+Job name        : 210
+WorkDir         : /iridisfs/scratch/ba3g18/Lithium/Pre-opt/[210]
+Command         : /iridisfs/scratch/ba3g18/Lithium/Pre-opt/[210]/QE_py.submit
+Partition       : batch
+Num hosts       : 1
+Num cores       : 192
+Num of tasks    : 192
+Hosts allocated : red6115
+Job Output Follows ...
+===============================================================================
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+Surface energy: 0.4976 J/m^2
+==============================================================================
+Running epilogue script on red6115.
+
+Submit time  : 2024-12-25T12:25:33
+Start time   : 2024-12-25T12:25:34
+End time     : 2024-12-26T06:22:16
+Elapsed time : 17:56:42 (Timelimit=2-12:00:00)
+
+Job ID: 152217
+Cluster: iridis_vi
+User/Group: ba3g18/eb
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 192
+CPU Utilized: 142-11:39:02
+CPU Efficiency: 99.25% of 143-13:26:24 core-walltime
+Job Wall-clock time: 17:56:42
+Memory Utilized: 172.63 GB (estimated maximum)
+Memory Efficiency: 27.48% of 628.12 GB (3.27 GB/core)
+

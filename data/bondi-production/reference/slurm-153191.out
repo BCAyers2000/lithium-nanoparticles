@@ -1,0 +1,34 @@
+Running SLURM prolog script on red6106
+===============================================================================
+Job started on Sun Dec 29 20:06:43 GMT 2024
+Job ID          : 153191
+Job name        : reference
+WorkDir         : /iridisfs/scratch/ba3g18/Lithium/Bondi/ref
+Command         : /iridisfs/scratch/ba3g18/Lithium/Bondi/ref/QE_py.submit
+Partition       : batch
+Num hosts       : 2
+Num cores       : 384
+Num of tasks    : 384
+Hosts allocated : red[6106,6109]
+Job Output Follows ...
+===============================================================================
+==============================================================================
+Running epilogue script on red6106.
+
+Submit time  : 2024-12-29T20:06:42
+Start time   : 2024-12-29T20:06:43
+End time     : 2024-12-29T20:22:18
+Elapsed time : 00:15:35 (Timelimit=2-12:00:00)
+
+Job ID: 153191
+Cluster: iridis_vi
+User/Group: ba3g18/eb
+State: COMPLETED (exit code 0)
+Nodes: 2
+Cores per node: 192
+CPU Utilized: 4-02:02:41
+CPU Efficiency: 98.31% of 4-03:44:00 core-walltime
+Job Wall-clock time: 00:15:35
+Memory Utilized: 666.13 GB (estimated maximum)
+Memory Efficiency: 53.02% of 1.23 TB (3.27 GB/core)
+

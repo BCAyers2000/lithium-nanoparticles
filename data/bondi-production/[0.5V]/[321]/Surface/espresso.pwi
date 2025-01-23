@@ -1,0 +1,96 @@
+&CONTROL
+   calculation      = 'scf'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   nstep            = 999
+   tstress          = .false.
+   tprnfor          = .true.
+   outdir           = './Li/'
+   prefix           = 'Lithium'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.000388
+   disk_io          = 'minimal'
+   pseudo_dir       = '/home/mmm1182/Repos/Pseudopotentials/pslibrary'
+/
+&SYSTEM
+   ibrav            = 12
+   nbnd             = 63
+   tot_charge       = 0.0
+   ecutwfc          = 80.0
+   ecutrho          = 800
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'cold'
+   nspin            = 1
+   input_dft        = 'pbe'
+   lgcscf           = .true.
+   gcscf_mu         = -3.904
+   gcscf_conv_thr   = 0.001
+   ntyp             = 1
+   nat              = 28
+   celldm(1)        = 11.243615
+   celldm(2)        = 1.2583056555741934
+   celldm(3)        = 8.704589
+   celldm(4)        = -0.1324535094169517
+/
+&ELECTRONS
+   electron_maxstep = 999
+   scf_must_converge = .true.
+   conv_thr         = 1e-14
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.2
+   diagonalization  = 'david'
+   diago_thr_init   = 1e-12
+   diago_david_ndim = 4
+   diago_full_acc   = .true.
+   startingwfc      = 'random'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   upscale          = 1000000.0
+   bfgs_ndim        = 1
+/
+&CELL
+   press_conv_thr   = 0.1
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 Li.pbe-sl-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+11 9 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+Li 0.2909984425 -0.2655955118 31.9884567655  
+Li -0.2910656985 5.0360896873 19.8026665821  
+Li 0.7468556177 2.1330095644 20.7393585804  
+Li 0.9825319327 6.9124017178 21.9107816825  
+Li 1.8748465816 4.2164896155 22.4748086474  
+Li 0.0154662352 1.6534868661 23.6013601940  
+Li -0.1760553105 6.3032424105 24.4933275990  
+Li 1.0830097411 3.7577725290 25.4208897296  
+Li 1.8919407047 1.0127345844 26.3702403887  
+Li 2.1593401162 5.8880467123 27.2978084506  
+Li -0.0154586697 3.1170180181 28.1897710564  
+Li 1.1000791490 0.5540133507 29.3163205035  
+Li 1.0007548521 5.2788823586 29.8803505941  
+Li 2.2281084389 2.6375112738 31.0517801218  
+Li 3.2659231162 -0.2655956198 31.9884584284  
+Li 2.6839524091 5.0360881333 19.8026666451  
+Li 3.7217461905 2.1330059247 20.7393518067  
+Li 3.9574522348 6.9124032070 21.9107770742  
+Li 4.8498026118 4.2164910831 22.4748195271  
+Li 2.9903982572 1.6534819932 23.6013597896  
+Li 2.7988818936 6.3032456093 24.4933252135  
+Li 4.0579422494 3.7577759727 25.4208886771  
+Li 4.8668728031 1.0127346643 26.3702403706  
+Li 5.1342726850 5.8880480586 27.2978060745  
+Li 2.9594703648 3.1170185934 28.1897690365  
+Li 4.0750193177 0.5540119229 29.3163230934  
+Li 3.9756832908 5.2788845699 29.8803490110  
+Li 5.2030344631 2.6375113314 31.0517802345  
+

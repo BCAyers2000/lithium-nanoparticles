@@ -1,0 +1,63 @@
+&CONTROL
+   calculation      = 'relax'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   nstep            = 999
+   tstress          = .false.
+   tprnfor          = .true.
+   outdir           = './'
+   prefix           = 'pw.dir'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 1e-05
+   disk_io          = 'minimal'
+   pseudo_dir       = '/home/ba3g18/Repos/Pseudopotentials/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS'
+/
+&SYSTEM
+   nbnd             = 2
+   tot_charge       = 1.0
+   ecutwfc          = 80.0
+   ecutrho          = 800
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'cold'
+   nspin            = 1
+   input_dft        = 'pbe'
+   ntyp             = 1
+   nat              = 1
+   ibrav            = 0
+/
+&ELECTRONS
+   electron_maxstep = 999
+   scf_must_converge = .true.
+   conv_thr         = 1e-14
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.1
+   diagonalization  = 'david'
+   startingwfc      = 'random'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   upscale          = 10000.0
+   bfgs_ndim        = 1
+/
+&CELL
+   press_conv_thr   = 0.1
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 Li.pbe-sl-kjpaw_psl.1.0.0.UPF
+
+K_POINTS gamma
+
+CELL_PARAMETERS angstrom
+10.30401056200000 0.00000000000000 0.00000000000000
+0.00000000000000 10.30401056200000 0.00000000000000
+0.00000000000000 0.00000000000000 10.30401056200000
+
+ATOMIC_POSITIONS angstrom
+Li 5.1520052810 5.1520052810 5.1520052810  
+

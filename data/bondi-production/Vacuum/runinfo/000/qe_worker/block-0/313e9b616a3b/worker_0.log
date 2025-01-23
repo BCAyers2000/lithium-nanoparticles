@@ -1,0 +1,4 @@
+2025-01-23 00:35:27.415 worker_log:640 752346 MainThread [INFO]  Worker 0 started
+2025-01-23 00:35:48.878 worker_log:753 752346 MainThread [INFO]  Received executor task 2
+2025-01-23 01:13:05.362 worker_log:771 752346 MainThread [INFO]  Completed executor task 2
+2025-01-23 01:13:05.363 worker_log:782 752346 MainThread [INFO]  All processing finished for executor task 2

@@ -1,0 +1,91 @@
+&CONTROL
+   calculation      = 'relax'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   nstep            = 999
+   tstress          = .false.
+   tprnfor          = .true.
+   outdir           = './Li/'
+   prefix           = 'Lithium'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.000388
+   disk_io          = 'minimal'
+   pseudo_dir       = '/work/e89/e89/ba3g18/Repos/Pseudopotentials/Pslibrary'
+/
+&SYSTEM
+   ibrav            = 8
+   nbnd             = 54
+   tot_charge       = 0.0
+   ecutwfc          = 80.0
+   ecutrho          = 800
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'cold'
+   nspin            = 1
+   input_dft        = 'pbe'
+   lgcscf           = .true.
+   gcscf_mu         = -3.404
+   gcscf_conv_thr   = 0.001
+   ntyp             = 1
+   nat              = 24
+   celldm(1)        = 11.243614999996216
+   celldm(2)        = 1.6329930000060644
+   celldm(3)        = 7.907112729682157
+/
+&ELECTRONS
+   electron_maxstep = 999
+   scf_must_converge = .true.
+   conv_thr         = 1e-06
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.2
+   diagonalization  = 'david'
+   diago_thr_init   = 1e-12
+   diago_david_ndim = 4
+   diago_full_acc   = .true.
+   startingwfc      = 'random'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   upscale          = 1000000.0
+   bfgs_ndim        = 1
+/
+&CELL
+   press_conv_thr   = 0.1
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 Li.pbe-sl-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+11 7 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+Li 3.0832379720 4.8580445300 26.9580905119  
+Li 0.8833487806 2.4290493070 20.0881662148  
+Li 2.1040876288 4.8580445600 21.4670988551  
+Li 2.9637105632 2.4289862313 22.8007682181  
+Li 1.0028210867 4.8580445800 24.2455191155  
+Li 1.8624808952 2.4289888193 25.5790467722  
+Li 3.0832489890 9.7160883600 26.9580226004  
+Li 0.8833487406 7.2870398530 20.0881662748  
+Li 2.1041066927 9.7160883800 21.4671540020  
+Li 2.9637103832 7.2871029087 22.8007682581  
+Li 1.0028908137 9.7160883300 24.2455558558  
+Li 1.8624808252 7.2871002907 25.5790468521  
+Li 6.0581114538 4.8580445300 26.9580623634  
+Li 3.8583430580 2.4290364826 20.0881725765  
+Li 5.0790269220 4.8580445600 21.4671349899  
+Li 5.9386643161 2.4290037841 22.8007794123  
+Li 3.9777406880 4.8580445800 24.2455553243  
+Li 4.8374349536 2.4290026243 25.5790686820  
+Li 6.0580902564 9.7160883600 26.9580437619  
+Li 3.8583430080 7.2870526774 20.0881726465  
+Li 5.0790032140 9.7160883800 21.4670785545  
+Li 5.9386641361 7.2870853559 22.8007794523  
+Li 3.9777815512 9.7160883300 24.2454978354  
+Li 4.8374348836 7.2870864857 25.5790687620  
+

@@ -1,0 +1,4 @@
+2025-01-23 00:35:27.427 worker_log:640 752355 MainThread [INFO]  Worker 9 started
+2025-01-23 00:35:48.883 worker_log:753 752355 MainThread [INFO]  Received executor task 14
+2025-01-23 00:36:51.447 worker_log:771 752355 MainThread [INFO]  Completed executor task 14
+2025-01-23 00:36:51.470 worker_log:782 752355 MainThread [INFO]  All processing finished for executor task 14

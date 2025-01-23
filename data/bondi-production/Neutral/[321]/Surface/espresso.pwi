@@ -1,0 +1,90 @@
+&CONTROL
+   calculation      = 'scf'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   nstep            = 999
+   tstress          = .false.
+   tprnfor          = .true.
+   outdir           = './Li/'
+   prefix           = 'Li'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.000388
+   disk_io          = 'none'
+   pseudo_dir       = '/home/ba3g18/Repos/Pseudopotentials/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS'
+/
+&SYSTEM
+   ibrav            = 12
+   nbnd             = 63
+   tot_charge       = 0.0
+   ecutwfc          = 80.0
+   ecutrho          = 800
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'cold'
+   nspin            = 1
+   input_dft        = 'pbe'
+   ntyp             = 1
+   nat              = 28
+   celldm(1)        = 11.243614999996216
+   celldm(2)        = 1.258305655578556
+   celldm(3)        = 8.70458853702361
+   celldm(4)        = -0.13245350941583364
+/
+&ELECTRONS
+   electron_maxstep = 999
+   scf_must_converge = .true.
+   conv_thr         = 1e-14
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.2
+   diagonalization  = 'david'
+   startingwfc      = 'random'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   upscale          = 1000000.0
+   bfgs_ndim        = 6
+/
+&CELL
+   press_conv_thr   = 0.1
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 Li.pbe-sl-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+11 9 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+Li 0.2653766863 -0.2290383789 31.7911223096  
+Li -0.2654690520 4.9995539534 20.0000131100  
+Li 0.7500700980 2.1293263213 20.7891334050  
+Li 1.0418118692 6.9896895787 21.8221696204  
+Li 1.7506049917 4.2248074227 22.5742356407  
+Li -0.0112132114 1.6612020399 23.6370239461  
+Li -0.1358028980 6.3236630353 24.4662593481  
+Li 1.0731677225 3.7684605889 25.4461239525  
+Li 1.9017726156 1.0020376570 26.3449939541  
+Li 2.1191083534 5.8676222423 27.3248812259  
+Li 0.0112404317 3.1093067292 28.1541168150  
+Li 1.2243115589 0.5456764545 29.2169138001  
+Li 0.9414769666 5.2016336578 29.9689788636  
+Li 2.2249022075 2.6411784981 31.0019973831  
+Li 3.2402767850 -0.2290394780 31.7911249132  
+Li 2.7096428928 4.9995560608 20.0000000000  
+Li 3.7249176327 2.1293285093 20.7891250166  
+Li 4.0167280203 6.9896332533 21.8221472422  
+Li 4.7255710409 4.2248393945 22.5742032403  
+Li 2.9636877204 1.6611823806 23.6370053601  
+Li 2.8391213926 6.3236653778 24.4662544580  
+Li 4.0481001403 3.7684654376 25.4461488564  
+Li 4.8767121601 1.0020400151 26.3449975783  
+Li 5.0940318290 5.8676208252 27.3248738008  
+Li 2.9861799613 3.1093121704 28.1541137269  
+Li 4.1992522018 0.5456800092 29.2169101822  
+Li 3.9164051561 5.2016249871 29.9689760930  
+Li 5.1998205004 2.6411792183 31.0019938481  
+

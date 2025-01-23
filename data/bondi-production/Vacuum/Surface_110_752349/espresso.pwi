@@ -1,0 +1,72 @@
+&CONTROL
+   calculation      = 'relax'
+   restart_mode     = 'from_scratch'
+   tstress          = .false.
+   tprnfor          = .true.
+   outdir           = './'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.000388
+   disk_io          = 'none'
+   pseudo_dir       = '/iridisfs/home/ba3g18/Repos/Pseudopotentials/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS'
+/
+&SYSTEM
+   ibrav            = 0
+   nbnd             = 36
+   ecutwfc          = 80
+   ecutrho          = 800
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'cold'
+   input_dft        = 'PBE'
+   ntyp             = 1
+   nat              = 16
+/
+&ELECTRONS
+   electron_maxstep = 200
+   conv_thr         = 1e-06
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.2
+   diagonalization  = 'david'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   upscale          = 1000000.0
+   bfgs_ndim        = 1
+/
+&CELL
+   press_conv_thr   = 0.1
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 Li.pbe-sl-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+11 11 1  0 0 0
+
+CELL_PARAMETERS angstrom
+5.94986480000000 0.00000000000000 0.00000000000000
+-1.98328628000000 5.60958608000000 0.00000000000000
+0.00000000000000 0.00000000000000 48.58044378000000
+
+ATOMIC_POSITIONS angstrom
+Li 0.9915918500 1.4024131600 20.7485452800  
+Li 1.9832882700 2.8047934300 23.0859828200  
+Li 0.9917136700 1.4023803100 25.4944223500  
+Li 1.9832882800 2.8047934500 27.8318347700  
+Li 0.0000403700 4.2072151700 20.7487340200  
+Li 0.9916443500 5.6095863900 23.0861085700  
+Li -0.0000794200 4.2071149300 25.4944037200  
+Li 0.9916443300 5.6095863500 27.8316634100  
+Li 3.9665362500 1.4023713000 20.7487340800  
+Li 4.9582206700 2.8047934200 23.0860925500  
+Li 3.9666560300 1.4024715100 25.4944037400  
+Li 4.9582206800 2.8047934400 27.8318544900  
+Li 2.9749847700 4.2071733100 20.7485452500  
+Li 3.9665767500 5.6095863800 23.0859820900  
+Li 2.9748629400 4.2072061300 25.4944223200  
+Li 3.9665767300 5.6095863300 27.8318233800  
+

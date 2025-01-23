@@ -1,0 +1,96 @@
+&CONTROL
+   calculation      = 'relax'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   nstep            = 999
+   tstress          = .false.
+   tprnfor          = .true.
+   outdir           = './Li/'
+   prefix           = 'Lithium'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.000388
+   disk_io          = 'minimal'
+   pseudo_dir       = '/work/e89/e89/ba3g18/Repos/Pseudopotentials/Pslibrary'
+/
+&SYSTEM
+   ibrav            = 12
+   nbnd             = 63
+   tot_charge       = 0.0
+   ecutwfc          = 80.0
+   ecutrho          = 800
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'cold'
+   nspin            = 1
+   input_dft        = 'pbe'
+   lgcscf           = .true.
+   gcscf_mu         = -2.904
+   gcscf_conv_thr   = 0.001
+   ntyp             = 1
+   nat              = 28
+   celldm(1)        = 11.243615
+   celldm(2)        = 1.2583056555741934
+   celldm(3)        = 8.704589
+   celldm(4)        = -0.1324535094169517
+/
+&ELECTRONS
+   electron_maxstep = 999
+   scf_must_converge = .true.
+   conv_thr         = 1e-06
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.2
+   diagonalization  = 'david'
+   diago_thr_init   = 1e-12
+   diago_david_ndim = 4
+   diago_full_acc   = .true.
+   startingwfc      = 'random'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   upscale          = 1000000.0
+   bfgs_ndim        = 1
+/
+&CELL
+   press_conv_thr   = 0.1
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 Li.pbe-sl-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+11 9 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+Li 0.2746023250 -0.2505309570 31.8771396258  
+Li -0.2745696008 5.0210433037 19.9139880420  
+Li 0.7603088280 2.1248853299 20.7747067883  
+Li 1.0199317735 6.9499269975 21.9063401335  
+Li 1.7915840187 4.2264834840 22.5240693765  
+Li -0.0027892966 1.6683783834 23.6188617538  
+Li -0.1578386083 6.3156059615 24.4913814620  
+Li 1.0726880346 3.7622833623 25.4346777869  
+Li 1.9022616187 1.0082147047 26.3564605907  
+Li 2.1411290558 5.8756753384 27.2997468008  
+Li 0.0027982214 3.1021202786 28.1722629391  
+Li 1.1833632547 0.5440300527 29.2670630512  
+Li 0.9633384445 5.2413566824 29.8847827744  
+Li 2.2145831116 2.6456299917 31.0164131447  
+Li 3.2495525734 -0.2505321470 31.8771390308  
+Li 2.7002336859 5.0210427087 19.9139957768  
+Li 3.7353054853 2.1248865199 20.7747151182  
+Li 3.9948790469 6.9499478220 21.9063520333  
+Li 4.7664908330 4.2264668244 22.5240711614  
+Li 2.9721615467 1.6683902831 23.6188700836  
+Li 2.8170955754 6.3156035816 24.4913856269  
+Li 4.0476204334 3.7622780074 25.4346670772  
+Li 4.8771922325 1.0082135147 26.3564599957  
+Li 5.1160656194 5.8756729584 27.2997515607  
+Li 2.9777294302 3.1021178986 28.1722665090  
+Li 4.1582843487 0.5440288627 29.2670618613  
+Li 3.9382750081 5.2413566824 29.8847839644  
+Li 5.1895256252 2.6456305867 31.0164173096  
+

@@ -1,0 +1,88 @@
+&CONTROL
+   calculation      = 'relax'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   nstep            = 999
+   tstress          = .false.
+   tprnfor          = .true.
+   outdir           = './Li/'
+   prefix           = 'Lithium'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.000388
+   disk_io          = 'minimal'
+   pseudo_dir       = '/home/mmm1182/Repos/Pseudopotentials/pslibrary'
+/
+&SYSTEM
+   ibrav            = 12
+   nbnd             = 45
+   tot_charge       = 0.0
+   ecutwfc          = 80.0
+   ecutrho          = 800
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'cold'
+   nspin            = 1
+   input_dft        = 'pbe'
+   lgcscf           = .true.
+   gcscf_mu         = -4.404
+   gcscf_conv_thr   = 0.001
+   ntyp             = 1
+   nat              = 20
+   celldm(1)        = 12.983009
+   celldm(2)        = 0.829155801861749
+   celldm(3)        = 7.267907999999999
+   celldm(4)        = -0.3015114884785963
+/
+&ELECTRONS
+   electron_maxstep = 999
+   scf_must_converge = .true.
+   conv_thr         = 1e-06
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.2
+   diagonalization  = 'david'
+   diago_thr_init   = 1e-12
+   diago_david_ndim = 4
+   diago_full_acc   = .true.
+   startingwfc      = 'random'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   upscale          = 1000000.0
+   bfgs_ndim        = 1
+/
+&CELL
+   press_conv_thr   = 0.1
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 Li.pbe-sl-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+10 12 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+Li 1.7189887627 2.1301049780 21.1761860807  
+Li 0.0014077452 4.4927566419 22.2182355712  
+Li 0.0010897701 1.1179153528 23.3551970765  
+Li 1.7179303492 3.2890875764 24.3654177325  
+Li 1.7171775932 -0.0401269470 25.5529499382  
+Li -0.0010654961 2.1345456788 26.5596192687  
+Li 1.7161734688 4.1950669156 27.7193896585  
+Li 1.7161919139 1.1382025880 28.7580949170  
+Li -0.0016208827 3.5269366580 30.2377753020  
+Li 3.4367672507 -0.2587183768 19.7211238741  
+Li 5.1541359377 2.1301591824 21.1762333473  
+Li 3.4365261058 4.4927740973 22.2182567441  
+Li 3.4362012538 1.1179628021 23.3552295072  
+Li 5.1531271057 3.2890637539 24.3654325232  
+Li 5.1523583633 -0.0401339890 25.5529980735  
+Li 3.4340884240 2.1345376701 26.5596323850  
+Li 5.1513592327 4.1950658999 27.7193875771  
+Li 5.1513598980 1.1382608680 28.7581010384  
+Li 3.4335507456 3.5269566393 30.2377022485  
+Li 6.8719110617 -0.2587402149 19.7209920209  
+

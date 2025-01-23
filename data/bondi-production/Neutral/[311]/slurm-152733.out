@@ -1,0 +1,37 @@
+Running SLURM prolog script on red6105
+===============================================================================
+Job started on Fri Dec 27 19:56:06 GMT 2024
+Job ID          : 152733
+Job name        : 311
+WorkDir         : /iridisfs/scratch/ba3g18/Lithium/Pre-opt/[311]
+Command         : /iridisfs/scratch/ba3g18/Lithium/Pre-opt/[311]/QE_py.submit
+Partition       : batch
+Num hosts       : 1
+Num cores       : 192
+Num of tasks    : 192
+Hosts allocated : red6105
+Job Output Follows ...
+===============================================================================
+/scratch/ba3g18/Installations/mambaforge/envs/Simulations/lib/python3.12/site-packages/ase/io/espresso.py:1617: UserWarning: ibrav specified without celldm(1) ASE will guess them, use with care
+  warnings.warn('ibrav specified without celldm(1)'
+Surface energy: 0.5172 J/m^2
+==============================================================================
+Running epilogue script on red6105.
+
+Submit time  : 2024-12-27T19:56:05
+Start time   : 2024-12-27T19:56:05
+End time     : 2024-12-27T21:18:53
+Elapsed time : 01:22:48 (Timelimit=2-12:00:00)
+
+Job ID: 152733
+Cluster: iridis_vi
+User/Group: ba3g18/eb
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 192
+CPU Utilized: 10-22:23:05
+CPU Efficiency: 99.03% of 11-00:57:36 core-walltime
+Job Wall-clock time: 01:22:48
+Memory Utilized: 343.89 GB (estimated maximum)
+Memory Efficiency: 54.75% of 628.12 GB (3.27 GB/core)
+

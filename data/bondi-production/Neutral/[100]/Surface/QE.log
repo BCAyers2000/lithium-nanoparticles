@@ -1,0 +1,10 @@
+                Step[ FC]     Time          Energy          fmax
+BFGSLineSearch:    0[  0] 12:42:18    -6547.170820       0.0260
+BFGSLineSearch:    1[  2] 13:39:13    -6547.173602       0.0094
+BFGSLineSearch:    2[  4] 15:22:51    -6547.173929       0.0110
+BFGSLineSearch:    3[  6] 16:01:36    -6547.174550       0.0065
+BFGSLineSearch:    4[  8] 16:48:42    -6547.174754       0.0028
+BFGSLineSearch:    5[  9] 17:20:44    -6547.174808       0.0027
+BFGSLineSearch:    6[ 11] 18:38:01    -6547.174884       0.0066
+BFGSLineSearch:    7[ 13] 19:31:42    -6547.175238       0.0048
+BFGSLineSearch:    8[ 14] 20:04:11    -6547.175353       0.0003

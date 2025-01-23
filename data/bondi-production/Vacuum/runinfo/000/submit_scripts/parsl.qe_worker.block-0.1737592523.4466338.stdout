@@ -1,0 +1,34 @@
+Running SLURM prolog script on red6033
+===============================================================================
+Job started on Thu Jan 23 00:35:24 GMT 2025
+Job ID          : 165357
+Job name        : parsl.qe_worker.block-0.1737592523.4466338
+WorkDir         : /iridisfs/scratch/ba3g18/QE/Bondi-current/Vacuum
+Command         : /iridisfs/scratch/ba3g18/QE/Bondi-current/Vacuum/runinfo/000/submit_scripts/parsl.qe_worker.block-0.1737592523.4466338
+Partition       : batch
+Num hosts       : 28
+Num cores       : 5376
+Num of tasks    : 28
+Hosts allocated : red[6033-6038,6041-6062]
+Job Output Follows ...
+===============================================================================
+==============================================================================
+Running epilogue script on red6033.
+
+Submit time  : 2025-01-23T00:35:23
+Start time   : 2025-01-23T00:35:24
+End time     : 2025-01-23T01:13:05
+Elapsed time : 00:37:41 (Timelimit=2-12:00:00)
+
+Job ID: 165357
+Cluster: iridis_vi
+User/Group: ba3g18/eb
+State: CANCELLED (exit code 0)
+Nodes: 28
+Cores per node: 192
+CPU Utilized: 26-10:09:25
+CPU Efficiency: 18.78% of 140-16:25:36 core-walltime
+Job Wall-clock time: 00:37:41
+Memory Utilized: 761.72 GB (estimated maximum)
+Memory Efficiency: 4.33% of 17.18 TB (3.27 GB/core)
+

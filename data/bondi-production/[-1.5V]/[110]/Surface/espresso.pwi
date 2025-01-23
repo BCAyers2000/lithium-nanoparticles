@@ -1,0 +1,86 @@
+&CONTROL
+   calculation      = 'relax'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   nstep            = 999
+   tstress          = .false.
+   tprnfor          = .true.
+   outdir           = './Li/'
+   prefix           = 'Lithium'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.000388
+   disk_io          = 'minimal'
+   pseudo_dir       = '/work/e89/e89/ba3g18/Repos/Pseudopotentials/Pslibrary'
+/
+&SYSTEM
+   ibrav            = 14
+   nbnd             = 36
+   tot_charge       = 0.0
+   ecutwfc          = 80.0
+   ecutrho          = 800
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'cold'
+   nspin            = 1
+   input_dft        = 'pbe'
+   lgcscf           = .true.
+   gcscf_mu         = -1.904
+   gcscf_conv_thr   = 0.001
+   ntyp             = 1
+   nat              = 16
+   celldm(1)        = 11.243615
+   celldm(2)        = 0.9999998496849888
+   celldm(3)        = 7.921182
+   celldm(4)        = 0.0
+   celldm(5)        = 0.0
+   celldm(6)        = -0.33333305010496117
+/
+&ELECTRONS
+   electron_maxstep = 999
+   scf_must_converge = .true.
+   conv_thr         = 1e-06
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.2
+   diagonalization  = 'david'
+   diago_thr_init   = 1e-12
+   diago_david_ndim = 4
+   diago_full_acc   = .true.
+   startingwfc      = 'random'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   upscale          = 1000000.0
+   bfgs_ndim        = 1
+/
+&CELL
+   press_conv_thr   = 0.1
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 Li.pbe-sl-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+11 11 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+Li 0.9916331848 1.4024069297 19.9401151504  
+Li 1.9832882700 2.8047934300 22.3459975061  
+Li 0.9916432348 1.4023887489 24.7839286437  
+Li 1.9832882800 2.8047934500 27.1898290318  
+Li 0.0000127753 4.2072038830 19.9401762499  
+Li 0.9916443500 5.6095863900 22.3460752768  
+Li 0.0000031707 4.2071682679 24.7840026703  
+Li 0.9916443300 5.6095863500 27.1898568408  
+Li 3.9665638447 1.4023825870 19.9401763099  
+Li 4.9582206700 2.8047934200 22.3460469914  
+Li 3.9665734393 1.4024181721 24.7840026903  
+Li 4.9582206800 2.8047934400 27.1899035667  
+Li 2.9749434352 4.2071795403 19.9401151204  
+Li 3.9665767500 5.6095863800 22.3459876405  
+Li 2.9749333752 4.2071976911 24.7839286137  
+Li 3.9665767300 5.6095863300 27.1898017542  
+

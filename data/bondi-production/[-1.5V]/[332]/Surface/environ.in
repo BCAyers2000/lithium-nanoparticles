@@ -1,0 +1,33 @@
+&ENVIRON
+   verbose          = 0
+   cion(1)          = 1.0
+   cion(2)          = 1.0
+   zion(1)          = 1.0
+   zion(2)          = -1.0
+   cionmax          = 5.0
+   system_dim       = 2
+   system_axis      = 3
+   environ_thr      = 0.1
+   env_pressure     = 0.0
+   temperature      = 298.15
+   environ_type     = 'input'
+   env_electrolyte_ntyp = 2
+   env_surface_tension = 37.3
+   electrolyte_entropy = 'full'
+   env_static_permittivity = 89.9
+   electrolyte_linearized = .false.
+/
+&BOUNDARY
+   alpha            = 1.32
+   radius_mode      = 'bondi'
+   solvent_mode     = 'ionic'
+   electrolyte_mode = 'ionic'
+/
+&ELECTROSTATIC
+   pbc_axis         = 3
+   pbc_dim          = 2
+   tol              = 1e-15
+   inner_tol        = 1e-18
+   pbc_correction   = 'parabolic'
+/
+EOF

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+#SBATCH --job-name=parsl.qe_worker.block-0.1737592523.4466338
+#SBATCH --output=/iridisfs/scratch/ba3g18/QE/Bondi-current/Vacuum/runinfo/000/submit_scripts/parsl.qe_worker.block-0.1737592523.4466338.stdout
+#SBATCH --error=/iridisfs/scratch/ba3g18/QE/Bondi-current/Vacuum/runinfo/000/submit_scripts/parsl.qe_worker.block-0.1737592523.4466338.stderr
+#SBATCH --nodes=28
+#SBATCH --time=3600
+#SBATCH --ntasks-per-node=1
+
+#SBATCH --exclusive
+#SBATCH --partition=batch
+#SBATCH --account=special
+#SBATCH --cpus-per-task=1
+
+
+module purge
+module purge
+module load pmix  
+module load binutils/2.42  
+module load intel-mpi/2021.12
+module load mkl/2024.1.0
+module load intel-compilers/2024.1.0  
+
+source /iridisfs/home/ba3g18/.bashrc
+conda activate Quacc_restarts
+
+export OMP_PLACES=cores
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export MKL_DYNAMIC=FALSE
+export OMP_PROC_BIND=close
+export I_MPI_FABRICS=shm:ofi
+export I_MPI_COLL_INTRANODE=shm
+export I_MPI_ADJUST_ALLGATHERV=1 
+export MKL_THREADING_LAYER=sequential
+export I_MPI_PMI_LIBRARY=/iridisfs/i6software/slurm/24.05.1/lib/libpmi.so 
+            
+export PARSL_CORES=1
+
+
+export JOBNAME="parsl.qe_worker.block-0.1737592523.4466338"
+
+process_worker_pool.py  --max_workers_per_node=14 -a 10.6.13.1,127.0.0.1,10.6.3.1,152.78.188.151 -p 0 -c 1e-06 -m None --poll 10 --task_port=54470 --result_port=54627 --cert_dir None --logdir=/iridisfs/scratch/ba3g18/QE/Bondi-current/Vacuum/runinfo/000/qe_worker --block_id=0 --hb_period=30  --hb_threshold=120 --drain_period=None --cpu-affinity none  --mpi-launcher=mpiexec --available-accelerators 

@@ -1,0 +1,87 @@
+&CONTROL
+   calculation      = 'relax'
+   verbosity        = 'high'
+   restart_mode     = 'from_scratch'
+   nstep            = 999
+   tstress          = .false.
+   tprnfor          = .true.
+   outdir           = './Li/'
+   prefix           = 'Lithium'
+   etot_conv_thr    = 1e-05
+   forc_conv_thr    = 0.000388
+   disk_io          = 'minimal'
+   pseudo_dir       = '/home/mmm1182/Repos/Pseudopotentials/pslibrary'
+/
+&SYSTEM
+   ibrav            = 8
+   nbnd             = 45
+   tot_charge       = 0.0
+   ecutwfc          = 80.0
+   ecutrho          = 800
+   occupations      = 'smearing'
+   degauss          = 0.01
+   smearing         = 'cold'
+   nspin            = 1
+   input_dft        = 'pbe'
+   lgcscf           = .true.
+   gcscf_mu         = -4.404
+   gcscf_conv_thr   = 0.001
+   ntyp             = 1
+   nat              = 20
+   celldm(1)        = 12.983009
+   celldm(2)        = 1.118034
+   celldm(3)        = 6.872491
+/
+&ELECTRONS
+   electron_maxstep = 999
+   scf_must_converge = .true.
+   conv_thr         = 1e-06
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.2
+   diagonalization  = 'david'
+   diago_thr_init   = 1e-12
+   diago_david_ndim = 4
+   diago_full_acc   = .true.
+   startingwfc      = 'random'
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+   upscale          = 1000000.0
+   bfgs_ndim        = 1
+/
+&CELL
+   press_conv_thr   = 0.1
+   cell_dofree      = 'all'
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Li 6.94 Li.pbe-sl-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+10 9 1  0 0 0
+
+ATOMIC_POSITIONS angstrom
+Li -0.0000000600 3.1665425591 25.4086824609  
+Li -0.0000000600 6.0798936345 24.0808616195  
+Li -0.0000000500 1.5937677475 22.3963690890  
+Li -0.0000000700 4.2450939305 20.7314078453  
+Li -0.0000000700 0.7760364685 27.4652005215  
+Li 1.7175846919 3.9057473230 23.1353703486  
+Li 1.7175825672 6.8190406657 21.8075907296  
+Li 1.7175813732 1.5284038047 19.7507053633  
+Li 1.7175870824 5.7404215918 26.4847056861  
+Li 1.7175835690 0.7106440478 24.8198693087  
+Li 3.4351561700 3.1665442448 25.4086890269  
+Li 3.4351561700 6.0798932833 24.0808702930  
+Li 3.4351561500 1.5937605685 22.3963709539  
+Li 3.4351561600 4.2450976534 20.7314066097  
+Li 3.4351561800 0.7760347567 27.4651605710  
+Li 5.1527276381 3.9057473130 23.1353703386  
+Li 5.1527297728 6.8190406657 21.8075907396  
+Li 5.1527309568 1.5284037947 19.7507053832  
+Li 5.1527252676 5.7404215918 26.4847056761  
+Li 5.1527287710 0.7106440478 24.8198692887  
+
