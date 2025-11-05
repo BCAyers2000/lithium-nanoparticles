@@ -62,7 +62,7 @@ def run_quantum_espresso(
 
         if calculation_type == "relax":
             input_data["control"].update({
-                "etot_conv_thr": 1.0e-5,
+                "etot_conv_thr": 1.0e-4,
                 "forc_conv_thr": 3.88e-4,
                 "tprnfor": True,
                 "tstress": False,
